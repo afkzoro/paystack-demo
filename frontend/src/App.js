@@ -6,12 +6,13 @@ import PaymentFailure from './components/PaymentFailure';
 
 function App() {
   return (
-    <Router basename="/">
+    <Router>
       <div className="min-h-screen bg-gray-100">
         <Routes>
           <Route path="/" element={<PaystackCheckout />} />
           <Route path="/payment/success" element={<PaymentSuccess />} />
           <Route path="/payment/failure" element={<PaymentFailure />} />
+          <Route path="/verify-payment" element={<PaymentSuccess />} />
         </Routes>
       </div>
     </Router>
