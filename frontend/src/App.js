@@ -12,7 +12,7 @@ function App() {
           <Route path="/" element={<PaystackCheckout />} />
           <Route path="/payment/success" element={<PaymentSuccess />} />
           <Route path="/payment/failure" element={<PaymentFailure />} />
-          <Route path="/verify-payment" element={<PaymentSuccess />} />
+          <Route path="*" element={<PaymentSuccess />} />
         </Routes>
       </div>
     </Router>
